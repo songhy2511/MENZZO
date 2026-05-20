@@ -1,0 +1,600 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+
+body{
+    font-family:'Montserrat', sans-serif;
+}
+
+/* =========================
+   RESET CSS
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#F5F5F5;
+    color:#111;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+.container{
+    width:1200px;
+    margin:auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:#0D1B2A;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar{
+    height:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo{
+    color:white;
+    font-size:38px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu{
+    display:flex;
+    gap:35px;
+}
+
+.menu a{
+    color:white;
+    font-size:17px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#C5A059;
+}
+
+/* =========================
+   ICONS
+========================= */
+
+.icons{
+    display:flex;
+    gap:20px;
+}
+
+.icons i{
+    color:#C5A059;
+    font-size:22px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.icons i:hover{
+    transform:scale(1.1);
+}
+
+.cart-count{
+    position:absolute;
+    top:-10px;
+    right:-10px;
+    width:20px;
+    height:20px;
+    background:#C5A059;
+    color:black;
+    border-radius:50%;
+    font-size:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    /* Đổi từ 700px thành 80vh (chiếm 80% chiều cao màn hình) */
+    height: 80vh; 
+    min-height: 550px; /* Đảm bảo không bị lùn quá trên màn hình nhỏ */
+    max-height: 700px; /* Khống chế không quá to trên màn hình rộng */
+
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/hero-banner.png");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    /* Dùng Flexbox đẩy nội dung sang mép phải thay vì dùng margin-left */
+    justify-content: flex-end; 
+    padding-right: 10%; /* Cách lề phải một khoảng an toàn (10%) */
+}
+
+.hero-content {
+    max-width: 550px; /* Thu gọn chữ lại một chút để thanh lịch hơn */
+    /* ĐÃ XÓA: margin-left: 1300px; (Thủ phạm gây lỗi tràn màn hình) */
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 58px; /* Giảm nhẹ font size xuống để vừa với max-width mới */
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 35px;
+    color: #C5A059;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn{
+    padding:16px 35px;
+    border:none;
+    background:#0D1B2A;
+    color: white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#C5A059;
+    color:black;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+    font-size:40px;
+    color:#0D1B2A;
+    font-weight:700;
+}
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(4,280px);
+    justify-content:space-between;
+    gap:25px;
+    margin-bottom:80px;
+}
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card{
+    background:white;
+    border-radius:4px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-5px);
+}
+
+.product-card img{
+    height:350px;
+    object-fit:cover;
+    transition:0.4s;
+}
+
+.product-card:hover img{
+    transform:scale(1.05);
+}
+
+/* =========================
+   PRODUCT INFO
+========================= */
+
+.product-info{
+    padding:18px;
+}
+
+.product-info h3{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.price{
+    color:#C5A059;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+/* =========================
+   PRODUCT ACTIONS
+========================= */
+
+.product-actions{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.cart-btn,
+.love-btn{
+    border:none;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.cart-btn{
+    background:#0D1B2A;
+    color:white;
+    padding:12px 18px;
+}
+
+.cart-btn:hover{
+    background:#C5A059;
+    color:black;
+}
+
+.love-btn{
+    background:#C5A059;
+    color:white;
+    padding:12px 16px;
+}
+
+.love-btn:hover{
+    opacity:0.8;
+}
+
+/* =========================
+   CATEGORY PAGE
+========================= */
+
+.category-layout{
+    display:flex;
+    gap:30px;
+    margin-bottom:80px;
+}
+
+.filter-box{
+    width: 240px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+.filter-group{
+    margin-bottom: 30px;
+}
+
+.filter-group h4{
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #0D1B2A;
+}
+
+.filter-group label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    font-size: 15px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.filter-group input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.filter-group select{
+    width: 100%;
+    height: 42px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+/* =========================
+   CATEGORY PRODUCTS
+========================= */
+
+.category-products{
+    flex:1;
+}
+
+/* =========================
+   PRODUCT DETAIL
+========================= */
+
+.product-detail{
+    display:flex;
+    gap:50px;
+    background:white;
+    padding:40px;
+    margin:50px 0;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.detail-image{
+    width:50%;
+}
+
+.detail-image img{
+    height:650px;
+    object-fit:cover;
+}
+
+.detail-content{
+    width:50%;
+}
+
+.detail-content h2{
+    font-size:42px;
+    margin-bottom:20px;
+    color:#0D1B2A;
+}
+
+.detail-content p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+/* =========================
+   SIZE BUTTONS
+========================= */
+
+.sizes{
+    display:flex;
+    gap:12px;
+    margin:20px 0 30px;
+}
+
+.size-btn{
+    padding:12px 20px;
+    border:1px solid #ccc;
+    background:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.size-btn:hover{
+    background:#0D1B2A;
+    color:white;
+}
+
+.size-btn.active{
+    background:#0D1B2A;
+    color:white;
+}
+
+/* =========================
+   QUANTITY
+========================= */
+
+.quantity{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin:20px 0;
+}
+
+.quantity button{
+    width:35px;
+    height:35px;
+    border:none;
+    background:#0D1B2A;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+/* =========================
+   CART PAGE
+========================= */
+
+.cart-page{
+    background:white;
+    padding:35px;
+    margin:50px 0;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.cart-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #ddd;
+    padding:25px 0;
+}
+
+.cart-product{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.cart-product img{
+    width:120px;
+    height:140px;
+    object-fit:cover;
+}
+
+.total-box{
+    text-align:right;
+    margin-top:40px;
+}
+
+/* =========================
+   CHECKOUT
+========================= */
+
+.checkout-layout{
+    display:flex;
+    gap:30px;
+    margin:50px 0;
+}
+
+.checkout-form{
+    width:70%;
+    background:white;
+    padding:35px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.checkout-summary{
+    width:30%;
+    background:white;
+    padding:35px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.form-group{
+    margin-bottom:22px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:10px;
+    font-weight:500;
+}
+
+.checkbox-group{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    margin:15px 0;
+}
+
+.checkbox-group input[type="checkbox"]{
+    width:18px;
+    height:18px;
+
+    accent-color:#C5A059;
+
+    cursor:pointer;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    margin-top:8px;
+}
+
+/* =========================
+   AUTH PAGE
+========================= */
+
+.auth-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:80vh;
+}
+
+.auth-box{
+    width:450px;
+    background:white;
+    padding:40px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.auth-box h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0D1B2A;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#0D1B2A;
+    color:white;
+    padding:70px 0;
+    margin-top:80px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:40px;
+}
+
+.footer-grid h3{
+    color:#C5A059;
+    margin-bottom:20px;
+}
+
+.footer-grid li{
+    margin-bottom:12px;
+    transition:0.3s;
+}
+
+.footer-grid li:hover{
+    color:#C5A059;
+    cursor:pointer;
+}

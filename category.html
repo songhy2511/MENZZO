@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Danh mục sản phẩm - MENZZO</title>
+
+    <!-- GOOGLE FONT -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="../css/style.css">
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <div class="container navbar">
+
+            <!-- LOGO -->
+
+            <a href="index.html"
+                class="logo">
+
+                MENZZO
+
+            </a>
+
+            <!-- MENU -->
+
+            <ul class="menu">
+
+                <li>
+                    <a href="index.html">
+                        Trang chủ
+                    </a>
+                </li>
+
+                <li>
+                    <a href="category.html">
+                        Danh mục
+                    </a>
+                </li>
+
+                <li>
+                    <a href="favorite.html">
+                        Yêu thích
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cart.html">
+                        Giỏ hàng
+                    </a>
+                </li>
+
+                <li>
+                    <a href="login.html">
+                        Đăng nhập
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- ICONS -->
+
+            <div class="icons">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <a href="cart.html"
+                    style="position:relative;">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <span class="cart-count">
+                        0
+                    </span>
+
+                </a>
+
+                <a href="login.html">
+
+                    <i class="fa-regular fa-user"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+         PAGE TITLE
+    ========================== -->
+
+    <section class="container">
+
+        <h2 class="section-title">
+
+            DANH MỤC SẢN PHẨM
+
+        </h2>
+
+    </section>
+
+    <!-- =========================
+         CATEGORY LAYOUT
+    ========================== -->
+
+    <section class="container">
+
+        <div class="category-layout">
+
+            <!-- =========================
+                 FILTER SIDEBAR
+            ========================== -->
+
+            <div class="filter-box">
+
+                <h4>
+                    Bộ lọc sản phẩm
+                </h4>
+
+                <!-- SIZE -->
+
+                <div class="filter-group">
+
+                    <h4>
+                        Size
+                    </h4>                    
+
+                    <label>
+                        <input type="checkbox">
+                        S
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        M
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        L
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        XL
+                    </label>
+
+                </div>
+
+                <!-- COLOR -->
+
+                <div class="filter-group">
+
+                    <h4>
+                        Màu sắc
+                    </h4>
+
+                    <label>
+                        <input type="checkbox">
+                        Đen
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Trắng
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Navy
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Xám
+                    </label>
+
+                </div>
+
+                <!-- PRICE -->
+
+                <div class="filter-group">
+
+                    <h4>
+                        Giá
+                    </h4>
+
+                    <select>
+
+                        <option>
+                            Tất cả
+                        </option>
+
+                        <option>
+                            Dưới 500K
+                        </option>
+
+                        <option>
+                            500K - 1 triệu
+                        </option>
+
+                        <option>
+                            Trên 1 triệu
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <!-- BUTTON -->
+
+                <button class="btn">
+
+                    ÁP DỤNG
+
+                </button>
+
+            </div>
+
+            <!-- =========================
+                 PRODUCT LIST
+            ========================== -->
+
+            <div class="category-products">
+
+                <div class="products">
+
+                    <!-- PRODUCT 1 -->
+
+                    <div class="product-card">
+
+                        <img src="../images/product-1.png"
+                            alt="Product">
+
+                        <div class="product-info">
+
+                            <h3>Áo Khoác Bomber Premium</h3>
+
+                            <div class="price">
+
+                                1.290.000đ
+
+                            </div>
+
+                            <div class="product-actions">
+
+                                <a href="product-detail.html">
+
+                                    <button class="cart-btn">
+
+                                        Xem chi tiết
+
+                                    </button>
+
+                                </a>
+
+                                <button class="love-btn">
+
+                                    ♡
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PRODUCT 2 -->
+
+                    <div class="product-card">
+
+                        <img src="../images/product-2.png"
+                            alt="Product">
+
+                        <div class="product-info">
+
+                            <h3>
+                                Áo Polo Basic
+                            </h3>
+
+                            <div class="price">
+
+                                690.000đ
+
+                            </div>
+
+                            <div class="product-actions">
+
+                                <a href="product-detail.html">
+
+                                    <button class="cart-btn">
+
+                                        Xem chi tiết
+
+                                    </button>
+
+                                </a>
+
+                                <button class="love-btn">
+
+                                    ♡
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PRODUCT 3 -->
+
+                    <div class="product-card">
+
+                        <img src="../images/product-3.png"
+                            alt="Product">
+
+                        <div class="product-info">
+
+                            <h3>
+                                Quần Tây Slimfit
+                            </h3>
+
+                            <div class="price">
+
+                                990.000đ
+
+                            </div>
+
+                            <div class="product-actions">
+
+                                <a href="product-detail.html">
+
+                                    <button class="cart-btn">
+
+                                        Xem chi tiết
+
+                                    </button>
+
+                                </a>
+
+                                <button class="love-btn">
+
+                                    ♡
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PRODUCT 4 -->
+
+                    <div class="product-card">
+
+                        <img src="../images/product-4.png"
+                            alt="Product">
+
+                        <div class="product-info">
+
+                            <h3>
+                                Áo Sơ Mi Premium
+                            </h3>
+
+                            <div class="price">
+
+                                790.000đ
+
+                            </div>
+
+                            <div class="product-actions">
+
+                                <a href="product-detail.html">
+
+                                    <button class="cart-btn">
+
+                                        Xem chi tiết
+
+                                    </button>
+
+                                </a>
+
+                                <button class="love-btn">
+
+                                    ♡
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PRODUCT 5 -->
+
+                    <div class="product-card">
+
+                        <img src="../images/product-bomber-luxury.png"
+                            alt="Product">
+
+                        <div class="product-info">
+
+                            <h3>
+                                Bomber Luxury
+                            </h3>
+
+                            <div class="price">
+
+                                1.490.000đ
+
+                            </div>
+
+                            <div class="product-actions">
+
+                                <a href="product-detail.html">
+
+                                    <button class="cart-btn">
+
+                                        Xem chi tiết
+
+                                    </button>
+
+                                </a>
+
+                                <button class="love-btn">
+
+                                    ♡
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PRODUCT 6 -->
+
+                    <div class="product-card">
+
+                        <img src="../images/product-jean-slimfit.png"
+                            alt="Product">
+
+                        <div class="product-info">
+
+                            <h3>
+                                Quần Jean Slimfit
+                            </h3>
+
+                            <div class="price">
+
+                                890.000đ
+
+                            </div>
+
+                            <div class="product-actions">
+
+                                <a href="product-detail.html">
+
+                                    <button class="cart-btn">
+
+                                        Xem chi tiết
+
+                                    </button>
+
+                                </a>
+
+                                <button class="love-btn">
+
+                                    ♡
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PRODUCT 7 -->
+
+                    <div class="product-card">
+
+                        <img src="../images/product-polo-luxury.png"
+                            alt="Product">
+
+                        <div class="product-info">
+
+                            <h3>
+                                Áo Polo Luxury
+                            </h3>
+
+                            <div class="price">
+
+                                850.000đ
+
+                            </div>
+
+                            <div class="product-actions">
+
+                                <a href="product-detail.html">
+
+                                    <button class="cart-btn">
+
+                                        Xem chi tiết
+
+                                    </button>
+
+                                </a>
+
+                                <button class="love-btn">
+
+                                    ♡
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PRODUCT 8 -->
+
+                    <div class="product-card">
+
+                        <img src="../images/product-shirt-modern-fit.png"
+                            alt="Product">
+
+                        <div class="product-info">
+
+                            <h3>
+                                Sơ Mi Modern Fit
+                            </h3>
+
+                            <div class="price">
+
+                                920.000đ
+
+                            </div>
+
+                            <div class="product-actions">
+
+                                <a href="product-detail.html">
+
+                                    <button class="cart-btn">
+
+                                        Xem chi tiết
+
+                                    </button>
+
+                                </a>
+
+                                <button class="love-btn">
+
+                                    ♡
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="container footer-grid">
+
+            <!-- COLUMN -->
+
+            <div>
+                <h3>
+                    MENZZO
+                </h3>
+                <p>
+                    Website thương mại điện tử
+                    thời trang nam hiện đại,
+                    tối giản và sang trọng.
+                </p>
+                
+                <div style="margin-top: 20px; font-size: 32px; display: flex; gap: 15px; color: #fff;">
+                    <i class="fa-brands fa-cc-visa" title="Visa"></i>
+                    <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+                    <i class="fa-brands fa-cc-paypal" title="PayPal"></i>
+                    <i class="fa-brands fa-cc-apple-pay" title="Apple Pay"></i>
+                </div>
+            </div>
+
+            <!-- COLUMN -->
+
+            <div>
+
+                <h3>
+                    Danh mục
+                </h3>
+
+                <ul>
+
+                    <li>Áo nam</li>
+                    <li>Quần nam</li>
+                    <li>Giày nam</li>
+                    <li>Phụ kiện</li>
+
+                </ul>
+
+            </div>
+
+            <!-- COLUMN -->
+
+            <div>
+
+                <h3>
+                    Hỗ trợ
+                </h3>
+
+                <ul>
+
+                    <li>Liên hệ</li>
+                    <li>Đổi trả</li>
+                    <li>Thanh toán</li>
+                    <li>Chính sách</li>
+
+                </ul>
+
+            </div>
+
+            <!-- COLUMN -->
+
+            <div>
+                <h3>
+                    Theo dõi
+                </h3>
+                <ul>
+                    <li><i class="fa-brands fa-facebook" style="margin-right: 10px; width: 16px;"></i>Facebook</li>
+                    <li><i class="fa-brands fa-instagram" style="margin-right: 10px; width: 16px;"></i>Instagram</li>
+                    <li><i class="fa-brands fa-tiktok" style="margin-right: 10px; width: 16px;"></i>TikTok</li>
+                    <li><i class="fa-brands fa-youtube" style="margin-right: 10px; width: 16px;"></i>YouTube</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
